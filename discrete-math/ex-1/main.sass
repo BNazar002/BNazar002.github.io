@@ -1,0 +1,133 @@
+body
+	overflow: hidden
+
+img
+	border: 3px solid rgba(#ff9934, .01)
+.container
+	width: 90vw
+	margin: 0 auto
+	margin-top: 8vh
+
+.operations-cont
+	display: flex
+	justify-content: space-between
+
+	div 
+		width: 30%
+		display: table
+		&:first-child,
+		&:last-child
+			margin-top: 45px
+
+		img
+			margin: 15px auto
+			display: block
+			grid-template-rows: auto
+			
+
+.active
+	border: 3px solid #000
+
+.bttn-default 
+  color: #fff
+
+.bttn-md
+  color: #000
+
+
+.bttn-md
+  margin: 0
+  padding: 0
+  border-width: 0
+  border-color: transparent
+  background: transparent
+  font-weight: 400
+  position: relative
+
+.bttn-md 
+  font-size: 20px
+  font-family: inherit
+  padding: 5px 12px
+
+.bttn-slant 
+  margin: 0
+  padding: 0
+  border-width: 0
+  border-color: transparent
+  background: transparent
+  font-weight: 400
+  position: relative
+  font-size: 20px
+  font-family: inherit
+  padding: 5px 12px
+  z-index: 0
+  border: none
+  border-radius: 0
+  background: transparent
+  color: #000
+
+.bttn-slant:before 
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  width: 100%
+  height: 100%
+  background: #ffca93
+  content: ''
+  transform: skewX(20deg)
+
+.bttn-slant:after 
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  width: 0
+  height: 100%
+  background: rgba(250,250,250,0.3)
+  content: ''
+  opacity: 0
+
+.bttn-slant.bttn-md 
+  font-size: 20px
+  font-family: inherit
+  padding: 5px 12px
+
+.value-p,
+.value-q
+	position: relative
+
+#atom-name
+	position: absolute
+	top: -80px
+	left: 22px
+	max-width: min-content
+
+#value 
+	font-size: 72px
+	color: #fe0000
+	font-weight: bold
+	text-transform: uppercase
+	line-height: 0.903
+	text-align: center
+	text-shadow: 7.222px 9.584px 5.46px rgba(70, 32, 105, 0.27)
+	position: absolute
+	left: 50%
+	bottom: 10%
+	transform: translate(-50%, -50%)
+	text-decoration: none
+	background-image: linear-gradient(to right, currentColor, black)
+	background-position: 0% 100%
+	background-repeat: no-repeat
+	background-size: 0% 2px
+	animation: line-animation 3s ease-in-out infinite
+
+
+@keyframes line-animation 
+	0%
+		background-size: 0 2px
+  
+	100%
+		background-size: 100% 2px
+
+
