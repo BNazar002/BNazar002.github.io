@@ -221,7 +221,7 @@ h1 {
 }
 
 .forward-screen {
-  background-color: #74b4d8;
+  background-color: #b0c6e7;
   width: 100vw;
   height: 100vh;
 }
@@ -243,7 +243,7 @@ h1 {
 .hamburger {
   position: relative;
   display: block;
-  width: 23px;
+  width: 30px;
   height: 14px;
   border-top: 3px solid #000;
   border-bottom: 3px solid #000;
