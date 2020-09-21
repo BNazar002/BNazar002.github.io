@@ -243,7 +243,7 @@ h1 {
 .hamburger {
   position: relative;
   display: block;
-  width: 30px;
+  width: 26px;
   height: 14px;
   border-top: 3px solid #000;
   border-bottom: 3px solid #000;
@@ -262,5 +262,14 @@ h1 {
 .second-screen,
 .first-screen {
   display: none;
+}
+
+.checkversion {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: 100px;
+  z-index: 150;
 }
 /*# sourceMappingURL=style.css.map */
