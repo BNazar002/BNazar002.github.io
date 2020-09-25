@@ -145,16 +145,16 @@
 // 	sucsess = []
 // }
 
-$(function () {
+// $(function () {
 
-	$('.forward-slider').slick({
-		centerMode: true,
-		// centerPadding: '40px',
-		slidesToShow: 1,
-		arrows: false,
-		infinite: false,
-		mobileFirst: true,
-		swipeToSlide: true
+// 	$('.forward-slider').slick({
+// 		centerMode: true,
+// 		// centerPadding: '40px',
+// 		slidesToShow: 1,
+// 		arrows: false,
+// 		infinite: false,
+// 		mobileFirst: true,
+// 		swipeToSlide: true
 
-	});
-});
+// 	});
+// });

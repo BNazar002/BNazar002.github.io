@@ -2,6 +2,8 @@ html
 	overflow: hidden
 	font-family: "e-Ukraine"
 	max-height: 50vh
+	user-select: none
+
 
 @font-face 
 	font-family: "e-Ukraine"
@@ -184,28 +186,29 @@ h1
 // .forward-slider
 	
 
-// 	img
-// 		width: 85vw
-// 		margin: 20px
 
-.slick-list
-	overflow: visible
-	height: 80vh
-	margin-top: 100px
 
-.slick-slide
-	top: 200px
-	&:focus 
-	  outline: none
+// .slick-list
+// 	overflow: visible
+// 	height: 80vh
+// 	margin-top: 100px
 
-img
+// .slick-slide
+// 	top: 200px
+// 	&:focus 
+// 	  outline: none
+
+
 
 
 .forward-slider
+	position: relative
 	img 
-		width: 75vw
-		margin: 0 auto
-		transition: all linear .3s
+		position: absolute
+		width: 93vw
+		top: 5px
+		left: 50%
+		transform: translate(-50%, 0)
 
 	.slick-current
 		img
