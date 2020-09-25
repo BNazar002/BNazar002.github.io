@@ -149,10 +149,12 @@ $(function () {
 
 	$('.forward-slider').slick({
 		centerMode: true,
-		centerPadding: '40px',
+		// centerPadding: '40px',
 		slidesToShow: 1,
 		arrows: false,
-		infinite: false
+		infinite: false,
+		mobileFirst: true,
+		swipeToSlide: true
 
 	});
 });
