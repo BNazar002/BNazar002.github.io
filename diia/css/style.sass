@@ -1,5 +1,5 @@
 html
-	overflow: hidden
+	// overflow: hidden
 	font-family: "e-Ukraine"
 
 @font-face 
@@ -18,6 +18,12 @@ h1
 	content: ""
 	width: 100vw
 	height: 100vh
+	video
+		position: absolute
+		top: 0
+		left: 0
+		width: 100vw
+		height: 100vh
 
 .diya-img
 	position: absolute
@@ -25,36 +31,6 @@ h1
 	left: 50%
 	transform: translate(-50%, -50%)
 	height: 100px
-	
-.website-loader::after 
-	filter: blur(10px)
-	// filter: grayscale(20%)
-	left: -50px
-	top: -50px
-	bottom: -50px
-	right: -50px
-	content: ""
-	display: block
-	background-size: cover
-	position: absolute
-	background-repeat: no-repeat
-	background: linear-gradient(217deg, rgba(255, 140, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 23, 255, 0.8), rgba(0, 0, 255, 0) 70.71%)
-	background-size: 150vw 150vh
-	animation: granimate 5s infinite alternate
-
-
-@keyframes granimate 
-	0%,
-	100% 
-		background-position: 0 25%
-    
-	25%,
-	75% 
-		background-position: 50% 50%
-    
-	50% 
-		background-position: 100% 100%
-    
 
 .second-screen
 	height: 100vh
@@ -164,6 +140,7 @@ h1
 
 
 .forward-screen
+	position: absolute
 	background-color: #b0c6e7
 	width: 100vw
 	height: 100vh
@@ -191,9 +168,9 @@ h1
 	width: 100%
 	border-top: 2.5px solid #000
 
-.second-screen,
-.first-screen
-	display: none
+// .second-screen,
+// .first-screen
+// 	display: none
 
 
 .checkversion

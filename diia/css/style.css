@@ -1,5 +1,4 @@
 html {
-  overflow: hidden;
   font-family: "e-Ukraine";
 }
 
@@ -21,59 +20,20 @@ h1 {
   height: 100vh;
 }
 
+.website-loader video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .diya-img {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 100px;
-}
-
-.website-loader::after {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-  left: -50px;
-  top: -50px;
-  bottom: -50px;
-  right: -50px;
-  content: "";
-  display: block;
-  background-size: cover;
-  position: absolute;
-  background-repeat: no-repeat;
-  background: linear-gradient(217deg, rgba(255, 140, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 23, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-  background-size: 150vw 150vh;
-  -webkit-animation: granimate 5s infinite alternate;
-          animation: granimate 5s infinite alternate;
-}
-
-@-webkit-keyframes granimate {
-  0%,
-  100% {
-    background-position: 0 25%;
-  }
-  25%,
-  75% {
-    background-position: 50% 50%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-}
-
-@keyframes granimate {
-  0%,
-  100% {
-    background-position: 0 25%;
-  }
-  25%,
-  75% {
-    background-position: 50% 50%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
 }
 
 .second-screen {
@@ -84,7 +44,6 @@ h1 {
   color: black;
   opacity: 0;
   font-weight: bold;
-  -webkit-transition: opacity .6s;
   transition: opacity .6s;
 }
 
@@ -102,8 +61,7 @@ h1 {
   text-decoration: underline;
   left: 50%;
   white-space: nowrap;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 .second-screen h4 {
@@ -115,20 +73,14 @@ h1 {
   font-weight: lighter;
   border-radius: 8px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   opacity: 0;
-  -webkit-transition: all .4s;
   transition: all .4s;
 }
 
 .point-massive {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -144,14 +96,11 @@ h1 {
 
 .password-container {
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
   grid-gap: 20px;
   width: 90%;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   font-weight: lighter;
 }
 
@@ -190,8 +139,7 @@ h1 {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .clear {
@@ -211,16 +159,15 @@ h1 {
 }
 
 .clear:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .clear:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .forward-screen {
+  position: absolute;
   background-color: #b0c6e7;
   width: 100vw;
   height: 100vh;
@@ -232,12 +179,8 @@ h1 {
 
 .header-container {
   padding: 18px 27px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .hamburger {
@@ -259,16 +202,10 @@ h1 {
   border-top: 2.5px solid #000;
 }
 
-.second-screen,
-.first-screen {
-  display: none;
-}
-
 .checkversion {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   bottom: 100px;
   z-index: 150;
 }
