@@ -206,11 +206,6 @@ h1 {
   border-top: 2.5px solid #000;
 }
 
-.second-screen,
-.first-screen {
-  display: none;
-}
-
 .checkversion {
   position: absolute;
   left: 50%;
