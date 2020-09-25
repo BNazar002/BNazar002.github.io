@@ -1,5 +1,5 @@
 html
-	// overflow: hidden
+	overflow: hidden
 	font-family: "e-Ukraine"
 
 @font-face 
@@ -145,12 +145,12 @@ h1
 	background-color: #b0c6e7
 	width: 100vw
 	height: 100vh
-	img
-		height: 55px
 .header-container
-	padding: 18px 27px//b0c6e7 
+	padding: 18px 27px
 	display: flex
 	justify-content: space-between
+	img
+		height: 55px
 .hamburger 
 	position: relative
 	display: block
@@ -169,9 +169,9 @@ h1
 	width: 100%
 	border-top: 2.5px solid #000
 
-// .second-screen,
-// .first-screen
-// 	display: none
+.second-screen,
+.first-screen
+	display: none
 
 
 .checkversion
@@ -180,3 +180,32 @@ h1
 	transform: translate(-50%, -50%)
 	bottom: 100px
 	z-index: 150
+// .forward-slider
+	
+
+// 	img
+// 		width: 85vw
+// 		margin: 20px
+
+.slick-list
+	overflow: visible
+	height: 80vh
+	margin-top: 100px
+
+.slick-slide
+	top: 200px
+	&:focus 
+	  outline: none
+
+img
+
+
+.forward-slider
+	img 
+		width: 70vw
+		margin: 0 auto
+		transition: all linear .3s
+
+	.slick-current
+		img
+			transform: scale(1.2)

@@ -1,4 +1,5 @@
 html {
+  overflow: hidden;
   font-family: "e-Ukraine";
 }
 
@@ -174,14 +175,14 @@ h1 {
   height: 100vh;
 }
 
-.forward-screen img {
-  height: 55px;
-}
-
 .header-container {
   padding: 18px 27px;
   display: flex;
   justify-content: space-between;
+}
+
+.header-container img {
+  height: 55px;
 }
 
 .hamburger {
@@ -203,11 +204,40 @@ h1 {
   border-top: 2.5px solid #000;
 }
 
+.second-screen,
+.first-screen {
+  display: none;
+}
+
 .checkversion {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 100px;
   z-index: 150;
+}
+
+.slick-list {
+  overflow: visible;
+  height: 80vh;
+  margin-top: 100px;
+}
+
+.slick-slide {
+  top: 200px;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.forward-slider img {
+  width: 70vw;
+  margin: 0 auto;
+  transition: all linear .3s;
+}
+
+.forward-slider .slick-current img {
+  transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
