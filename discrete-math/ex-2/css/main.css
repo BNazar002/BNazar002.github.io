@@ -374,8 +374,8 @@ i {
   }
   .results__container {
     position: absolute;
-    top: 100%;
     left: 458%;
+    top: 100%;
     transform: translate(-50%, -50%);
     width: max-content;
     padding: 0 20px;
