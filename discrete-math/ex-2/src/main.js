@@ -77,6 +77,38 @@ function valueMassiveProcess() {
 		currentFalseMassiveNumber = falseMassive[falseMassive.length - falseMassiveChecked]
 
 
+		let readyFalseMassiveNumberLength = falseMassive.length
+		let bigMassiveValues = readyFalseMassive.length
+		let currentReadyFalseMassive, currentBigMassiveValues;
+		let smallMassiveValueLength = 3,
+			currentBigMassiveLength = 3,
+			currentSmallMassiveValue;
+
+		while (readyFalseMassiveNumberLength != 0) {
+			currentReadyFalseMassive = falseMassive[falseMassive.length - readyFalseMassiveNumberLength] //позиція відносно номеру де вибрано false
+			currentBigMassiveValues = readyFalseMassive[readyFalseMassive.length - bigMassiveValues]
+			if (initialValues[currentReadyFalseMassive][0] != false) {
+				$('#' + currentReadyFalseMassive + '-p').css({
+					'text-decoration': 'overline'
+				})
+			}
+			if (initialValues[currentReadyFalseMassive][1] != false) {
+				$('#' + currentReadyFalseMassive + '-q').css({
+					'text-decoration': 'overline'
+				})
+			}
+			if (initialValues[currentReadyFalseMassive][2] != false) {
+				$('#' + currentReadyFalseMassive + '-r').css({
+					'text-decoration': 'overline'
+				})
+			}
+
+			readyFalseMassiveNumberLength--
+			bigMassiveValues--
+		}
+
+
+
 
 		$('.expressions').css({
 			'display': 'none'
