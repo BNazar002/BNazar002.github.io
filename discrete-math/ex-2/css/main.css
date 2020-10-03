@@ -266,7 +266,7 @@ img {
 
 #show-result {
   position: absolute;
-  bottom: -520px;
+  bottom: -490px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -100;
