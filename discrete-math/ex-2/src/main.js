@@ -85,7 +85,7 @@ function valueMassiveProcess() {
 			currentSmallMassiveValue;
 
 		while (readyFalseMassiveNumberLength != 0) {
-			currentReadyFalseMassive = falseMassive[falseMassive.length - readyFalseMassiveNumberLength] //позиція відносно номеру де вибрано false
+			currentReadyFalseMassive = falseMassive[falseMassive.length - readyFalseMassiveNumberLength]
 			currentBigMassiveValues = readyFalseMassive[readyFalseMassive.length - bigMassiveValues]
 			if (initialValues[currentReadyFalseMassive][0] != false) {
 				$('#' + currentReadyFalseMassive + '-p').css({
