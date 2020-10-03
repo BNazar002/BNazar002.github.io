@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<title>logic</title>
+	<link rel="shortcut icon" href="img/icon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel='stylesheet' href='reset.css'>
+	<link rel='stylesheet' href='main.min.css'>
+</head>
+
+<body>
+	<section class="Falling-leaves">
+		<div class="set">
+			<div><img src="img/leaves1.png" alt="#"></div>
+			<div><img src="img/leaves2.png" alt="#"></div>
+			<div><img src="img/leaves3.png" alt="#"></div>
+			<div><img src="img/leaves4.png" alt="#"></div>
+			<div><img src="img/leaves1.png" alt="#"></div>
+			<div><img src="img/leaves2.png" alt="#"></div>
+			<div><img src="img/leaves3.png" alt="#"></div>
+			<div><img src="img/leaves4.png" alt="#"></div>
+		</div>
+		<div class="set set-2">
+			<div><img src="img/leaves1.png" alt="#"></div>
+			<div><img src="img/leaves2.png" alt="#"></div>
+			<div><img src="img/leaves3.png" alt="#"></div>
+			<div><img src="img/leaves4.png" alt="#"></div>
+			<div><img src="img/leaves1.png" alt="#"></div>
+			<div><img src="img/leaves2.png" alt="#"></div>
+			<div><img src="img/leaves3.png" alt="#"></div>
+			<div><img src="img/leaves4.png" alt="#"></div>
+		</div>
+		<div class="set set-3">
+			<div><img src="img/leaves1.png" alt="#"></div>
+			<div><img src="img/leaves2.png" alt="#"></div>
+			<div><img src="img/leaves3.png" alt="#"></div>
+			<div><img src="img/leaves4.png" alt="#"></div>
+			<div><img src="img/leaves1.png" alt="#"></div>
+			<div><img src="img/leaves2.png" alt="#"></div>
+			<div><img src="img/leaves3.png" alt="#"></div>
+			<div><img src="img/leaves4.png" alt="#"></div>
+		</div>
+	</section>
+	<section class="working-environment">
+		<div class="container">
+			<div class="operations-cont">
+				<div class="value-container value-container-1">
+					<div class="number">1<i class="fas fa-caret-right"></i></div>
+					<div id="1-t" class="value"><span>T</span></div>
+					<div id="1-f" class="value"><span>F</span></div>
+				</div>
+				<div class="value-container value-container-2">
+					<div class="number">2<i class="fas fa-caret-right"></i></div>
+					<div id="2-t" class="value"><span>T</span></div>
+					<div id="2-f" class="value"><span>F</span></div>
+				</div>
+				<div class="value-container value-container-3">
+					<div class="number">3<i class="fas fa-caret-right"></i></div>
+					<div id="3-t" class="value"><span>T</span></div>
+					<div id="3-f" class="value"><span>F</span></div>
+				</div>
+				<div class="value-container value-container-4">
+					<div class="number">4<i class="fas fa-caret-right"></i></div>
+					<div id="4-t" class="value"><span>T</span></div>
+					<div id="4-f" class="value"><span>F</span></div>
+				</div>
+				<div class="value-container value-container-5">
+					<div class="number">5<i class="fas fa-caret-right"></i></div>
+					<div id="5-t" class="value"><span>T</span></div>
+					<div id="5-f" class="value"><span>F</span></div>
+				</div>
+				<div class="value-container value-container-6">
+					<div class="number">6<i class="fas fa-caret-right"></i></div>
+					<div id="6-t" class="value"><span>T</span></div>
+					<div id="6-f" class="value"><span>F</span></div>
+				</div>
+				<div class="value-container value-container-7">
+					<div class="number">7<i class="fas fa-caret-right"></i></div>
+					<div id="7-t" class="value"><span>T</span></div>
+					<div id="7-f" class="value"><span>F</span></div>
+				</div>
+				<div class="value-container value-container-8">
+					<div class="number">8<i class="fas fa-caret-right"></i></div>
+					<div id="8-t" class="value"><span>T</span></div>
+					<div id="8-f" class="value"><span>F</span></div>
+				</div>
+			</div>
+	</section>
+
+
+	<div id="show-result" class="header_arrows-bottom">
+		<div href="#" class="animate__animated animate__fadeInDown animate__infinite animate__slow">
+			<img src="img/arrows-down.svg" alt="">
+		</div>
+	</div>
+
+	<section class="results">
+		<div class="results__container">
+			<div class="expressions 0-expression">(<span id="0-p">p</span><i class="fas fa-less-than"
+					style="transform:rotate(-90deg);"></i><span id="0-q">q</span><i class="fas fa-less-than"
+					style="transform:rotate(-90deg);"></i><span id="0-r">r</span>)
+			</div>
+			<div class="expressions 1-expression"><span class="and" id="1-and"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(20%);"></i></span>(<span id="1-p">p</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="1-q">q</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="1-r">r</span>)<span
+					class="and-e" id="1-and-e"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(-20%);"></i></span>
+			</div>
+			<div class="expressions 2-expression"><span class="and" id="2-and"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(20%);"></i></span>(<span id="2-p">p</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="2-q">q</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="2-r">r</span>)<span
+					class="and-e" id="2-and-e"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(-20%);"></i></span>
+			</div>
+			<div class="expressions 3-expression"><span class="and" id="3-and"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(20%);"></i></span>(<span id="3-p">p</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="3-q">q</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="3-r">r</span>)<span
+					class="and-e" id="3-and-e"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(-20%);"></i></span>
+			</div>
+			<div class="expressions 4-expression"><span class="and" id="4-and"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(20%);"></i></span>(<span id="4-p">p</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="4-q">q</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="4-r">r</span>)<span
+					class="and-e" id="4-and-e"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(-20%);"></i></span>
+			</div>
+			<div class="expressions 5-expression"><span class="and" id="5-and"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(20%);"></i></span>(<span id="5-p">p</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="5-q">q</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="5-r">r</span>)<span
+					class="and-e" id="5-and-e"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(-20%);"></i></span>
+			</div>
+			<div class="expressions 6-expression"><span class="and" id="6-and"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(20%);"></i></span>(<span id="6-p">p</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="6-q">q</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="6-r">r</span>)<span
+					class="and-e" id="6-and-e"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(-20%);"></i></span>
+			</div>
+			<div class="expressions 7-expression"><span class="and" id="7-and"><i class="fas fa-less-than"
+						style="transform:rotate(90deg) translateY(20%);"></i></span>(<span id="7-p">p</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="7-q">q</span><i
+					class="fas fa-less-than" style="transform:rotate(-90deg);"></i><span id="7-r">r</span>)
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<script src="https://kit.fontawesome.com/3e47d6bb4a.js" crossorigin="anonymous"></script>
+	<script src='main.js'></script>
+</body>
+
+</html>
