@@ -23,6 +23,13 @@ h1 {
   height: 100vh;
 }
 
+.website-loader img {
+  transform: scale(0.62);
+  left: -132px;
+  top: -330px;
+  position: absolute;
+}
+
 .website-loader video {
   transform: scale(1.2);
   position: absolute;
