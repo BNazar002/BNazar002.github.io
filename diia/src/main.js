@@ -148,7 +148,6 @@ function pointBg() {
 let today = new Date();
 let month = today.getMonth() + 1
 let date = today.getDate() + '.' + month + '.' + today.getFullYear();
-alert(date)
 let time = today.getHours() + ':' + today.getMinutes();
 $('#date').text(date)
 $('#time').text(time)
