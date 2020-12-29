@@ -110,7 +110,7 @@ setTimeout(function () {
 	$('.first-screen').css(
 		'display', 'none'
 	)
-}, 4000)
+}, 4)
 
 function errorProcess() {
 	if (sucsess.length < 4) {
@@ -144,6 +144,13 @@ function pointBg() {
 	password = []
 	sucsess = []
 }
+
+let today = new Date();
+let date = today.toLocaleDateString();
+let time = today.getHours() + ':' + today.getMinutes();
+$('#date').text(date)
+$('#time').text(time)
+
 
 // $(function () {
 
