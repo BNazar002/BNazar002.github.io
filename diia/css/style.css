@@ -233,6 +233,7 @@ h1 {
 .passport-cotainer {
   margin: 0 auto;
   transition: opacity .4s ease-in-out;
+  top: 13vh;
 }
 
 .passport-cotainer .passport-foto {
