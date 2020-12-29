@@ -110,7 +110,7 @@ setTimeout(function () {
 	$('.first-screen').css(
 		'display', 'none'
 	)
-}, 4)
+}, 4000)
 
 function errorProcess() {
 	if (sucsess.length < 4) {
