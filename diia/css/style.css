@@ -229,4 +229,26 @@ h1 {
 .forward-slider .slick-current img {
   transform: scale(1.2);
 }
+
+.passport-cotainer {
+  margin: 0 auto;
+  transition: opacity .4s ease-in-out;
+}
+
+.passport-cotainer img {
+  position: absolute;
+  width: 93vw;
+  top: 13vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.passport-cotainer .passport-foto {
+  position: absolute;
+  top: 34%;
+  left: 30%;
+  z-index: 1;
+  height: 200px;
+  width: auto;
+}
 /*# sourceMappingURL=style.css.map */
