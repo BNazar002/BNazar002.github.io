@@ -178,6 +178,7 @@ h1 {
 }
 
 .forward-screen {
+  display: none;
   position: absolute;
   background-color: #b0c6e7;
   width: 100vw;
@@ -221,22 +222,6 @@ h1 {
   z-index: 150;
 }
 
-.forward-slider {
-  position: relative;
-}
-
-.forward-slider img {
-  position: absolute;
-  width: 93vw;
-  top: 15px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.forward-slider .slick-current img {
-  transform: scale(1.2);
-}
-
 .passport-cotainer {
   margin: -17px auto;
   transition: opacity .4s ease-in-out;
@@ -264,5 +249,15 @@ h1 {
   left: 50%;
   white-space: nowrap;
   transform: translate(-50%, 0);
+}
+
+.qr-code {
+  position: absolute;
+  top: 14.5%;
+  left: 2%;
+  z-index: -10;
+  width: 96vw;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

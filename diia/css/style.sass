@@ -143,6 +143,7 @@ h1
   transform: rotate(-45deg)
 
 .forward-screen
+	display: none
 	position: absolute
 	background-color: #b0c6e7
 	width: 100vw
@@ -188,22 +189,23 @@ h1
 // 	&:focus 
 // 	  outline: none
 
-.forward-slider
-	position: relative
-	img
-		position: absolute
-		width: 93vw
-		top: 15px
-		left: 50%
-		transform: translate(-50%, 0)
+// .forward-slider
+// 	position: relative
+// 	img
+// 		position: absolute
+// 		width: 93vw
+// 		top: 15px
+// 		left: 50%
+// 		transform: translate(-50%, 0)
 
-	.slick-current
-		img
-			transform: scale(1.2)
+// 	.slick-current
+// 		img
+// 			transform: scale(1.2)
 
 .passport-cotainer
 	margin: -17px auto
 	transition: opacity .4s ease-in-out
+
 	// img
 	// 	position: absolute
 	// 	width: 93vw
@@ -230,3 +232,12 @@ h1
 	left: 50%
 	white-space: nowrap
 	transform: translate(-50%, 0)
+
+.qr-code
+	position: absolute
+	top: 14.5%
+	left: 2%
+	z-index: -10
+	width: 96vw
+	opacity: 0
+	transition: opacity .2s ease-in-out

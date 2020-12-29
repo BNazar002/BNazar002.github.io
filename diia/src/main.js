@@ -88,7 +88,7 @@ function checkPassword() {
 				$('.second-screen').css(
 					'display', 'none',
 				)
-			}, 1000)
+			}, 500)
 		}
 	}
 }
@@ -110,7 +110,7 @@ setTimeout(function () {
 	$('.first-screen').css(
 		'display', 'none'
 	)
-}, 4000)
+}, 40)
 
 function errorProcess() {
 	if (sucsess.length < 4) {
@@ -146,12 +146,44 @@ function pointBg() {
 }
 
 let today = new Date();
-let month = today.getMonth() + 1
+let month = today.getMonth() + 1;
 let date = today.getDate() + '.' + month + '.' + today.getFullYear();
-let time = today.getHours() + ':' + today.getMinutes();
-$('#date').text(date)
-$('#time').text(time)
+let minutes = today.getMinutes();
+minutes = minutes.toString();
+if (minutes.length === 1) {
+	minutes = '0' + today.getMinutes();
+};
+let time = today.getHours() + ':' + minutes;
+$('#date').text(date);
+$('#time').text(time);
 
+let qrNumber = '1';
+$('.passport-block').click(
+	function () {
+		if (qrNumber === 3) {
+			qrNumber = 1;
+		};
+		$('#qr' + qrNumber).css({
+			'opacity': '1',
+			'z-index': '2'
+		});
+		qrNumber++;
+	}
+)
+$('.qr-code').click(
+	function () {
+
+		$('.qr-code').css({
+			'opacity': '0'
+		})
+		setTimeout(
+			function () {
+				$('.qr-code').css({
+					'z-index': '-1'
+				})
+			}, 210)
+	}
+)
 
 // $(function () {
 
