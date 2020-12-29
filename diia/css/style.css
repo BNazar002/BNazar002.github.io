@@ -235,14 +235,6 @@ h1 {
   transition: opacity .4s ease-in-out;
 }
 
-.passport-cotainer img {
-  position: absolute;
-  width: 100vw;
-  top: 13vh;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
 .passport-cotainer .passport-foto {
   position: absolute;
   top: 34%;
@@ -250,5 +242,9 @@ h1 {
   z-index: 1;
   height: 200px;
   width: auto;
+}
+
+.passport-block {
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
