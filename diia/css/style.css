@@ -237,7 +237,7 @@ h1 {
 
 .passport-cotainer img {
   position: absolute;
-  width: 93vw;
+  width: 100vw;
   top: 13vh;
   left: 50%;
   transform: translate(-50%, 0);
