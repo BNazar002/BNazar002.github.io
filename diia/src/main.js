@@ -146,14 +146,28 @@ function pointBg() {
 }
 
 let today = new Date();
+let day = today.getDate();
+day = day.toString();
+if (day.length === 1) {
+	day = '0' + day;
+};
 let month = today.getMonth() + 1;
-let date = today.getDate() + '.' + month + '.' + today.getFullYear();
+month = month.toString();
+if (month.length === 1) {
+	month = '0' + month;
+};
+let date = day + '.' + month + '.' + today.getFullYear();
+let hours = today.getHours();
+hours = hours.toString()
+if (hours.length === 1) {
+	hours = '0' + hours;
+};
 let minutes = today.getMinutes();
 minutes = minutes.toString();
 if (minutes.length === 1) {
 	minutes = '0' + today.getMinutes();
 };
-let time = today.getHours() + ':' + minutes;
+let time = hours + ':' + minutes;
 $('#date').text(date);
 $('#time').text(time);
 
