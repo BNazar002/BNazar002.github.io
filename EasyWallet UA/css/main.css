@@ -3,9 +3,20 @@
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   user-select: none;
+  background-color: #fafafa;
 }
 
-.gamburger img {
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.gamburger {
+  margin: 0;
+}
+
+img {
   width: 100vw;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
