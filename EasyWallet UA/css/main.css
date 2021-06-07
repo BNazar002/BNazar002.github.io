@@ -19,4 +19,8 @@ img {
   width: 100vw;
   display: block;
 }
+
+.element::-webkit-scrollbar {
+  width: 0;
+}
 /*# sourceMappingURL=main.css.map */
