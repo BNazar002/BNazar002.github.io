@@ -5,9 +5,7 @@
   user-select: none;
 }
 
-.gamburger {
-  margin: 0 auto;
-  width: min-content;
-  height: auto;
+.gamburger img {
+  width: 100vw;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
