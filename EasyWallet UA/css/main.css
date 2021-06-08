@@ -3,7 +3,7 @@
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   user-select: none;
-  background-color: #fafafa;
+  background-color: #f3f2f8;
 }
 
 div {
@@ -24,9 +24,5 @@ img {
   width: 0;
   -webkit-appearance: none;
   background: transparent;
-}
-
-.content {
-  margin-bottom: 1000px;
 }
 /*# sourceMappingURL=main.css.map */
