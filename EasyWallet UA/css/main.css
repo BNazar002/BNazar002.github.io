@@ -22,17 +22,11 @@ img {
 
 ::-webkit-scrollbar {
   width: 0;
+  -webkit-appearance: none;
+  background: transparent;
 }
 
 .content {
   margin-bottom: 1000px;
-}
-
-.test {
-  width: 100vw;
-  height: 100px;
-  background-color: red;
-  position: sticky;
-  top: 0;
 }
 /*# sourceMappingURL=main.css.map */
