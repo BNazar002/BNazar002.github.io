@@ -11,31 +11,36 @@
 </head>
 
 <body>
+	<div class="trigers">
+		<div id="button-EP"></div>
+		<div id="button-LE"></div>
+	</div>
 	<section>
 		<div class="gamburger">
 			<img class="gamburger-EP" id="g-EP" src="img/gamburger-EP.png">
 			<img id="g-Le" style="display: none" src="img/gamburger-LE.png">
 		</div>
-		<div class="strip" id="fixed">
+		<div class="strip">
+			<img id="strip-LE" src="img/strip-LE.png">
 			<img src="img/strip-EP.png">
 		</div>
 		<div class="content">
-			<div class="ticket-container">
+			<img id="content-EP" src="img/content.jpg">
+			<div id="content-LE">
 				<div class="variables">
 					<div class="valid-container">
-						<div class="v_time">15:38</div>
-						<div class="v_date"></div>
-						<div class="price"></div>
+						<div class="time time_valid"></div>
+						<div class="date date_valid">07/06/21</div>
+						<div class="price price_valid"></div>
 					</div>
 					<div class="invalid-container">
-						<div class="inv_time"></div>
-						<div class="inv_date"></div>
-						<div class="price"></div>
+						<div class="time time_invalid">15:04</div>
+						<div class="date date_invalid">04/06/21</div>
+						<div class="price price_invalid"></div>
 					</div>
 				</div>
-				<img src="img/content-ticket2.jpg">
+				<img src="img/content-ticket.jpg">
 			</div>
-			<img src="img/content.jpg">
 
 		</div>
 	</section>

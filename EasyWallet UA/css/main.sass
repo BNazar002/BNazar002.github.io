@@ -8,6 +8,7 @@
 	font-family: 'Roboto', sans-serif
 	overflow-x: hidden
 	user-select: none
+
 body
 	background-color: #f3f2f8
 
@@ -21,6 +22,7 @@ div
 img
 	width: 100vw
 	display: block
+
 ::-webkit-scrollbar
 	width: 0
 	-webkit-appearance: none
@@ -32,19 +34,66 @@ img
 	display: block
 	overflow: hidden
 
+#content-LE
+	position: relative
+	opacity: 0
+
 .variables
 	position: absolute
 	font-family: 'Rosemary', serif
 	width: 100%
 	height: 100%
 	background: transparent
-
-// .valid-container,
-// .invalid-container
-// 	position: relative
-.v_time
-	position: absolute
-	right: 120px
-	top: 301px
-	color: rgba(0, 0, 0, .5)
+	color: #000
 	font-size: 1.24em
+	overflow: hidden
+
+.time, .date, .price
+	position: absolute
+
+.time
+	right: 120px
+	&_valid
+		top: 301px
+	&_invalid
+		top: 450px
+
+.date
+	right: 37px
+	&_valid
+		top: 301px
+	&_invalid
+		top: 450px
+
+.price
+	right: 79px
+	&_valid
+		top: 331px
+	&_invalid
+		top: 479px
+.trigers
+	z-index: 100
+	position: absolute
+	width: 100vw
+	height: 100vh
+
+#button-EP
+	position: absolute
+	top: 59px
+	left: 76px
+	background-color: transparent
+	width: 47px
+	height: 47px
+
+#button-LE
+	position: absolute
+	top: 59px
+	left: 197px
+	background-color: transparent
+	width: 47px
+	height: 47px
+
+#strip-LE
+	position: absolute
+	display: block
+	opacity: 0
