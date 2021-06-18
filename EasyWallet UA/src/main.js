@@ -53,7 +53,12 @@ if (month.length === 1) {
 	month = '0' + month;
 };
 
-let date = day + '/' + month + '/' + today.getFullYear();
+let year = today.getFullYear();
+year = year.toString();
+year = year.substr(2)
+console.log(year)
+
+let date = day + '/' + month + '/' + year;
 
 let hours = today.getHours();
 hours = hours.toString();
@@ -65,8 +70,19 @@ let minutes = today.getMinutes();
 minutes = minutes - 5;
 if (minutes < 0) {
 	hours--
+	if (hours < 0) {
+		hours = 23;
+		day--
+		if (day < 0) {
+			day = 28
+			month--
+			if (month < 0) {
+				year--
+			};
+		};
+	};
 	minutes = 60 + minutes
-}
+};
 minutes = minutes.toString();
 if (minutes.length === 1) {
 	minutes = '0' + minutes;
@@ -74,7 +90,7 @@ if (minutes.length === 1) {
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
-}
+};
 
 let seconds = today.getSeconds();
 seconds = seconds.toString();
@@ -84,18 +100,18 @@ if (seconds.length === 1) {
 
 let time_valid = hours + ':' + minutes;
 $('.time_valid').text(time_valid)
+
 let randomInt = getRandomInt(20)
 if (randomInt < 5) {
 	while (randomInt < 5) {
 		randomInt = getRandomInt(20)
 	}
-}
+};
 minutes = minutes - randomInt
-
 if (minutes < 0) {
 	hours--
 	minutes = 60 + minutes
-}
+};
 minutes = minutes.toString();
 if (minutes.length === 1) {
 	minutes = '0' + minutes;
@@ -103,4 +119,4 @@ if (minutes.length === 1) {
 let time_invalid = hours + ':' + minutes;
 $('.time_invalid').text(time_invalid)
 
-
+$('.date').text(date)
