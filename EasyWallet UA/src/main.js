@@ -11,6 +11,9 @@ $('#button-LE').click(function () {
 	);
 	$('#strip-LE').css(
 		'opacity', '1'
+	);
+	$('#gamburger-LE').css(
+		'opacity', '1'
 	)
 });
 
@@ -22,7 +25,13 @@ $('#button-EP').click(function () {
 		'display': 'block',
 		'opacity': '1'
 	});
+	$('body').css(
+		'background-color', '#f3f2f8'
+	);
 	$('#strip-LE').css(
+		'opacity', '0'
+	);
+		$('#gamburger-LE').css(
 		'opacity', '0'
 	)
 });

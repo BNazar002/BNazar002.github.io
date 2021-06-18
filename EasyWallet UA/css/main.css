@@ -23,6 +23,15 @@ div {
   margin: 0;
 }
 
+.gamburger {
+  position: relative;
+}
+
+#gamburger-LE {
+  opacity: 0;
+  position: absolute;
+}
+
 img {
   width: 100vw;
   display: block;
@@ -62,7 +71,7 @@ img {
 }
 
 .time {
-  right: 120px;
+  right: 122px;
 }
 
 .time_valid {
