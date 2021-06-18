@@ -119,4 +119,8 @@ if (minutes.length === 1) {
 let time_invalid = hours + ':' + minutes;
 $('.time_invalid').text(time_invalid)
 
-$('.date').text(date)
+$('.date_valid').text(date);
+
+day -= 1;
+date = day + '/' + month + '/' + year;
+$('.date_invalid').text(date);
