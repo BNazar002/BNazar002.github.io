@@ -96,6 +96,10 @@ if (minutes < 0) {
 	hours--
 	minutes = 60 + minutes
 }
+minutes = minutes.toString();
+if (minutes.length === 1) {
+	minutes = '0' + minutes;
+};
 let time_invalid = hours + ':' + minutes;
 $('.time_invalid').text(time_invalid)
 
